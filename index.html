@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelAIStudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0a1a2f; /* أزرق غامق */
+      color: #ffffff;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    header img {
+      height: 90px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      color: #ffffff;
+      font-size: 32px;
+    }
+
+    p.subtitle {
+      font-size: 18px;
+      color: #dddddd;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #081526;
+      border-top: 2px solid #1e2e4a;
+      color: #ddd;
+    }
+
+    footer a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== إصلاح ألوان النصوص داخل الشات ====== */
+    n8n-chat, 
+    n8n-chat * {
+      color: #000000 !important; /* خلي الشات يضل بخط أسود */
+    }
+
+    n8n-chat .n8n-chat-message-bot,
+    n8n-chat .n8n-chat-message-user {
+      color: #000000 !important;
+    }
+
+    n8n-chat input,
+    n8n-chat textarea {
+      color: #000000 !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="PixelAIStudio Logo">
+    <h1>Welcome to PixelAIStudio</h1>
+    <p class="subtitle">Your AI-powered digital assistant studio.</p>
+  </header>
+
+  <footer>
+    <p>📧 Contact us: <a href="mailto:pixelaistudio.ai@gmail.com">pixelaistudio.ai@gmail.com</a></p>
+    <p>© 2025 PixelAIStudio</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://cmg911.app.n8n.cloud/webhook/024fb15e-9ab3-45f2-8095-1a33ad8d469d/chat'
+    });
+  </script>
+</body>
+</html>
