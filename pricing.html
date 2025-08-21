@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - PixelAIStudio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      margin: 40px 0;
+      color: #203a43;
+    }
+    .plans {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .plan {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .plan:hover {
+      transform: translateY(-8px);
+    }
+    .plan h2 {
+      margin-bottom: 10px;
+      color: #2c5364;
+    }
+    .price {
+      font-size: 1.5rem;
+      margin: 15px 0;
+      color: #ff4b2b;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #203a43;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #2c5364;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Plan</h1>
+  <div class="plans">
+    <div class="plan">
+      <h2>Free</h2>
+      <p class="price">$0 / month</p>
+      <ul>
+        <li>✔ Basic chatbot</li>
+        <li>✔ Limited messages</li>
+      </ul>
+      <a href="#" class="button">Get Started</a>
+    </div>
+
+    <div class="plan">
+      <h2>Basic</h2>
+      <p class="price">$9 / month</p>
+      <ul>
+        <li>✔ AI-powered chatbot</li>
+        <li>✔ 24/7 support</li>
+        <li>✔ Up to 1000 messages</li>
+      </ul>
+      <a href="#" class="button">Subscribe</a>
+    </div>
+
+    <div class="plan">
+      <h2>Pro</h2>
+      <p class="price">$29 / month</p>
+      <ul>
+        <li>✔ All Basic features</li>
+        <li>✔ Unlimited messages</li>
+        <li>✔ Advanced AI responses</li>
+      </ul>
+      <a href="#" class="button">Subscribe</a>
+    </div>
+  </div>
+</body>
+</html>
